@@ -2,6 +2,7 @@
 
 import time
 from Gameboard import Gameboard
+from Counter import Counter
 
 class Console:
     
@@ -12,13 +13,15 @@ class Console:
     
     def __int__(self):
         """ Initialize a console object """
-    
+        
     def displayMessage(self, string):
         """ Outputs message """
+        """ string -> void """
         print("%s", string)
         
     def getCoordinate(self, string):
         """ Get coordinate from user or computer and validate it"""
+        """ string -> integer """
         
         running = True;
         
@@ -46,6 +49,7 @@ class Console:
         
     def pause(self, int):
         """ Pauses game """
+        """ int -> void """
         time.sleep(int)
         
     def showFleetStatus(self, board):
