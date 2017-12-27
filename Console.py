@@ -1,23 +1,27 @@
 #!/usr/bin/python
 
 import time
+from Gameboard import *
+from Counter import *
 
 class Console:
     
     # I/O
     
-    min = getMinValue()
-    max = getMaxValue()
+    min = Gameboard.getMinValue()
+    max = Gameboard.getMaxValue()
     
     def __int__(self):
         """ Initialize a console object """
-    
+        
     def displayMessage(self, string):
         """ Outputs message """
+        """ string -> void """
         print("%s", string)
         
     def getCoordinate(self, string):
         """ Get coordinate from user or computer and validate it"""
+        """ string -> integer """
         
         running = True;
         
@@ -45,6 +49,7 @@ class Console:
         
     def pause(self, int):
         """ Pauses game """
+        """ int -> void """
         time.sleep(int)
         
     def showFleetStatus(self, board):
