@@ -1,13 +1,14 @@
 #!/usr/bin/python
 
 import time
+from Gameboard import Gameboard
 
 class Console:
     
     # I/O
     
     min = Gameboard.getMinValue()
-    max = getMaxValue()
+    max = Gameboard.getMaxValue()
     
     def __int__(self):
         """ Initialize a console object """
