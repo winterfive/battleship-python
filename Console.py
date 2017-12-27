@@ -6,7 +6,7 @@ class Console:
     
     # I/O
     
-    min = getMinValue()
+    min = Gameboard.getMinValue()
     max = getMaxValue()
     
     def __int__(self):
