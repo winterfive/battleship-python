@@ -20,7 +20,8 @@ class Console:
         print("%s", string)
         
     def getCoordinate(self, string):
-        """ Get coordinate from user or computer and validate it"""
+
+        """ Get coordinate from user or computer and validate it """
         """ string -> integer """
         
         running = True;
@@ -50,7 +51,11 @@ class Console:
     def pause(self, int):
         """ Pauses game """
         """ int -> void """
-        time.sleep(int)
+        time.sleep(int)        
+
+    def playAgain(self):
+        """ Checks if player wants to play again """
+        # TODO
         
     def showFleetStatus(self, board):
         """ Displays the number of ships still in play """

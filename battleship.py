@@ -1,7 +1,7 @@
 #!usr/bin/python
 
-from Console import *
-from Gameboard import *
+from console import *
+from gameboard import *
 
 class Battleship:
     
@@ -12,20 +12,23 @@ class Battleship:
     userBoard = Gameboard()
     computerBoard = Gameboard()
     
-    def __main__(self):
-        myBattleship = Battleship()
-        myBattleship.beginGame(self)
-        
+
     def beginGame(self):
         while myConsole.playAgain is True:
            setUpGame()
            playGame()
            
-    def setUpGame():
+    def setUpGame(self):
+        """ Sets up boards so the game can begin """
         # TODO
         
-    def playGame():
+    def playGame(self):
+        """ Runs game play """
         # TODO
+    
+def __main__(self):
+    myBattleship = Battleship()
+    myBattleship.beginGame()
     
 if __name__ == "__main__":
     # execute only if run as a script
