@@ -20,6 +20,7 @@ class Console:
         print("%s", string)
         
     def getCoordinate(self, string):
+
         """ Get coordinate from user or computer and validate it """
         """ string -> integer """
         
@@ -50,8 +51,8 @@ class Console:
     def pause(self, int):
         """ Pauses game """
         """ int -> void """
-        time.sleep(int)
-        
+        time.sleep(int)        
+
     def playAgain(self):
         """ Checks if player wants to play again """
         # TODO

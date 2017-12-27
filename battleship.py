@@ -12,6 +12,7 @@ class Battleship:
     userBoard = Gameboard()
     computerBoard = Gameboard()
     
+
     def beginGame(self):
         while myConsole.playAgain is True:
            setUpGame()
