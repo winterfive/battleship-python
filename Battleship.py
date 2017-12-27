@@ -1,7 +1,7 @@
 #!usr/bin/python
 
-from Console import Console
-from Gameboard import Gameboard
+from Console import *
+from Gameboard import *
 
 class Battleship:
     

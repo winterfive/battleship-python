@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 import time
-from Gameboard import Gameboard
-from Counter import Counter
+from Gameboard import *
+from Counter import *
 
 class Console:
     
