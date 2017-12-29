@@ -65,7 +65,7 @@ class Console:
             if ship.getActive() is True:
                 myCounter.addToCounter()
                 
-        if(myCounter.getCounter() >= 2):
-            Console.displayMessage("\n\nYou have {} ships left in your fleet.".format(myCounter.getCounter()))
+        if(myCounter >= 2):
+            Console.displayMessage("\n\nYou have {} ships left in your fleet.".format(myCounter))
         else:
-            Console.displayMessage("\n\nYou have {} ship left in your fleet.".format(myCounter.getCounter()))
+            Console.displayMessage("\n\nYou have {} ship left in your fleet.".format(myCounter))
