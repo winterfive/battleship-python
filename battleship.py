@@ -14,7 +14,7 @@ class Battleship:
     
 
     def beginGame(self):
-        while myConsole.playAgain is True:
+        while Console.playAgain is True:
            setUpGame()
            playGame()
            
