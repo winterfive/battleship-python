@@ -1,15 +1,15 @@
 #!/usr/bin/python
 
 import time
-from Gameboard import *
-from Counter import *
+from gameboard import *
+from counter import *
 
 class Console:
     
     # I/O
     
-    min = Gameboard.getMinValue()
-    max = Gameboard.getMaxValue()
+    min = gameboard.getMinValue()
+    max = gameboard.getMaxValue()
     
     def __int__(self):
         """ Initialize a console object """
@@ -17,10 +17,9 @@ class Console:
     def displayMessage(self, string):
         """ Outputs message """
         """ string -> void """
-        print("%s", string)
+        print("{}".format(string))
         
     def getCoordinate(self, string):
-
         """ Get coordinate from user or computer and validate it """
         """ string -> integer """
         
@@ -28,16 +27,16 @@ class Console:
         
         # validate coordinate
         while(running):
-            coordinate = input("%s", string)
+            coordinate = input()
             
             try:
                 coordinate = int()
             except ValueError:
-                print("That input is invalid.\nPlease enter a number between %s and %s:", min, max)
+                print("That input is invalid.\nPlease enter a number between {} and {}:".format(min, max))
                 continue
                 
             if coordinate < min or coordinate > max:
-                print("That input is invalid.\nPlease enter a number between %s and %s:", min, max)
+                print("That input is invalid.\nPlease enter a number between {} and {}:".format(min, max))
                 continue
             else:
                 running = False
@@ -45,7 +44,7 @@ class Console:
         return coordinate
         
     def displayBoard(self):
-        """ Adds 'frame' to 2darray and displays it """
+        """ Adds 'frame' around gameboard and displays it """
         # TODO
         
     def pause(self, int):
@@ -67,8 +66,6 @@ class Console:
                 myCounter.addToCounter()
                 
         if(myCounter.getCounter() >= 2):
-            Console.displayMessage("\n\nYou have %s ships left in your fleet.", myCounter.getCounter())
+            Console.displayMessage("\n\nYou have {} ships left in your fleet.".format(myCounter.getCounter()))
         else:
-            Console.displayMessage("\n\nYou have %s ship left in your fleet.", myCounter.getCounter())
-            
-    
+            Console.displayMessage("\n\nYou have {} ship left in your fleet.".format(myCounter.getCounter()))

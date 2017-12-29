@@ -1,17 +1,18 @@
 #!/usr/bin/python
 
 class Counter:
+    
     def __init__(self):
         """ Initialize a counter object """
+        self.__counter = 0
         
-    __counter = 0
+    def setCounter(self, int):
+        __counter = int
         
-    def setCounter(self, int, counter):
-        counter = int
+    @property
+    def getCounter(self):
+        return self.__counter
         
-    def getCounter(self, counter):
-        return counter
-        
-    def addToCounter(self, counter):
-        counter += 1
+    def addToCounter(self):
+        self.__counter += 1
         
