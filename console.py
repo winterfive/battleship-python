@@ -45,6 +45,7 @@ class Console:
         
     def displayBoard(self):
         """ Adds 'frame' around gameboard and displays it """
+        pass
         # TODO
         
     def pause(self, int):
@@ -54,6 +55,7 @@ class Console:
 
     def playAgain(self):
         """ Checks if player wants to play again """
+        pass
         # TODO
         
     def showFleetStatus(self, board):
