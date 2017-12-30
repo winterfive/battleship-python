@@ -45,6 +45,7 @@ class Console:
         
     def displayBoard(self):
         """ Adds 'frame' around gameboard and displays it """
+        pass
         # TODO
         
     def pause(self, int):
@@ -54,6 +55,7 @@ class Console:
 
     def playAgain(self):
         """ Checks if player wants to play again """
+        pass
         # TODO
         
     def showFleetStatus(self, board):
@@ -65,7 +67,7 @@ class Console:
             if ship.getActive() is True:
                 myCounter.addToCounter()
                 
-        if(myCounter >= 2):
-            Console.displayMessage("\n\nYou have {} ships left in your fleet.".format(myCounter))
+        if(Counter.getCounter(myCounter) >= 2):
+            Console.displayMessage("\n\nYou have {} ships left in your fleet.".format(myCounter.getCounter())
         else:
-            Console.displayMessage("\n\nYou have {} ship left in your fleet.".format(myCounter))
+            Console.displayMessage("\n\nYou have {} ship left in your fleet.".format(myCounter.getCounter())
